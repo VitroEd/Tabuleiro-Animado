@@ -1,0 +1,231 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.tabuleiro {
+    position: absolute;
+    border: 1px solid;
+    height: 480px;
+    width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 8px 8px rgb(0 0 0 / 65%);
+    background: #ffffff;
+    z-index: -2;
+}
+
+.preta {
+    background: #000000;
+}
+
+.celula {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+}
+
+.cavalo{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    top: 5px;
+    left: 65px;
+    animation: L 13s ease infinite;
+}
+
+#quadrado{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: rgb(255, 255, 255);
+    left: 69px;
+    top: 9px;
+    z-index: -1;
+    opacity: 0%;
+}
+    /*
+    Cada bloco é 60px X 60px
+    */
+@keyframes L{
+    0%{
+        top: 5px;
+        left: 365px;
+    }
+
+
+    4%{
+        top: 65px;
+        left: 365px;
+    }
+    8%{
+        top: 125px;
+        left: 365px;
+    }
+    12%{
+        top: 125px;
+        left: 302px;
+    }
+    16%{
+        top: 125px;
+        left: 302px;
+    }
+
+
+    20%{
+        top: 185px;
+        left: 302px;
+    }
+    24%{
+        top: 245px;
+        left: 302px;
+    }
+    28%{
+        top: 245px;
+        left: 250px;
+    }
+    32%{
+        top: 245px;
+        left: 250px;
+    }
+
+
+    36%{
+        top: 245px;
+        left: 200px;
+    }
+    40%{
+        top: 365px;
+        left: 200px;
+    }
+    44%{
+        top: 365px;
+        left: 250px;
+    }
+    48%{
+        top: 365px;
+        left: 302px;
+    }
+
+    
+    52%{
+        top: 300px;
+        left: 302px;
+    }
+    56%{
+        top: 300px;
+        left: 365px;
+    }
+    60%{
+        top: 300px;
+        left: 365px;
+    }
+    64%{
+        top: 365px;
+        left: 365px;
+    }
+
+
+    68%{
+        top: 420px;
+        left: 365px;
+    }
+    72%{
+        top: 420px;
+        left: 365px;
+    }
+    76%{
+        top: 420px;
+        left: 365px;
+    }
+    80%{
+        top: 420px;
+        left: 365px;
+    }
+
+    /*
+    Volta
+    */
+    81%{ 
+        top: 365px;
+        left: 365px;
+    }
+    82%{
+        top: 300px;
+        left: 365px;
+    }
+    83%{
+        top: 300px;
+        left: 365px;
+    }
+
+
+    84%{
+        top: 300px;
+        left: 302px;
+    }
+    85%{
+        top: 365px;
+        left: 302px;
+    }
+    86%{
+        top: 365px;
+        left: 250px;
+    }
+
+
+    87%{
+        top: 365px;
+        left: 200px;
+    }
+    88%{
+        top: 245px;
+        left: 200px;
+    }
+    89%{
+        top: 245px;
+        left: 250px;
+    }
+
+
+    90%{
+        top: 245px;
+        left: 250px;
+    }
+    91%{
+        top: 245px;
+        left: 302px;
+    }
+    92%{
+        top: 185px;
+        left: 302px;
+    }
+
+
+    94%{
+        top: 125px;
+        left: 302px;
+    }
+    96%{
+        top: 125px;
+        left: 302px;
+    }
+    98%{
+        top: 125px;
+        left: 365px;
+    }
+    99%{
+        top: 5;
+        left: 365px;
+    }
+    100%{
+        top: 5px;
+        left: 365px;
+    }
+}
+
